@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { width: 350px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 15px; background-color: #f4f4f9; }
+        h2 { color: #333; font-size: 18px; margin-top: 0; }
+        #chat-container { height: 300px; border: 1px solid #ddd; background: #fff; overflow-y: auto; padding: 10px; border-radius: 8px; margin-bottom: 10px; }
+        .message { margin-bottom: 10px; font-size: 14px; line-height: 1.4; }
+        .user-msg { color: #007bff; font-weight: bold; }
+        .ai-msg { color: #28a745; font-weight: bold; }
+        .input-area { display: flex; gap: 5px; }
+        input { flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 8px 15px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <h2>AI Web Assistant</h2>
+    <div id="chat-container">
+        <div class="message">AI: Hello! I can help you navigate this website. What are you looking for?</div>
+    </div>
+    <div class="input-area">
+        <input type="text" id="userInput" placeholder="e.g. Find the login page">
+        <button id="sendBtn">Ask</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
