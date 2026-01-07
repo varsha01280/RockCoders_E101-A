@@ -1,6 +1,6 @@
 console.log("HELLO! THE POPUP SCRIPT IS RUNNING!");
 const API_KEY = "AIzaSyB6Op7DG8BsYcFHKW1f8za-pdtaSHT0KTk"; // Put your key here
-const MODEL_NAME = "gemini-3-flash";   // The latest 2026 stable model
+const MODEL = "gemini-3-flash-preview";    // The latest 2026 stable model
 
 document.getElementById('sendBtn').addEventListener('click', async () => {
     const inputField = document.getElementById('userInput');
@@ -54,4 +54,5 @@ document.getElementById('sendBtn').addEventListener('click', async () => {
         chatContainer.innerHTML += `<div style="color:red">System Error: Check your internet or API key.</div>`;
         console.error(error);
     }
+
 });
