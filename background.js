@@ -1,5 +1,5 @@
 // background.js
-const API_KEY = "AIzaSyDBnG2ADh48_DQgI511R4N45tVMnrr5gI0";
+const API_KEY = "";
 const MODEL = "gemini-1.5-flash"; // Switch to 1.5 for better free-tier luck
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
@@ -24,4 +24,5 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         .catch(() => sendResponse({ success: false, error: "NETWORK" }));
         return true; 
     }
+
 });
